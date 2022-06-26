@@ -4,4 +4,4 @@ $PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordPro
 $PasswordProfile.Password = "<ChooseAPasswordHere>"
 $PasswordProfile.EnforceChangePasswordPolicy = $true
 
-New-AzureADUser -DisplayName "Test Scriptuser" -PasswordProfile $PasswordProfile -UserPrincipalName "test.scriptuser@pentlandfirth.com" -AccountEnabled $true -MailNickName "TestScriptUser"
+New-AzureADUser -DisplayName "Test Scriptuser" -PasswordProfile $PasswordProfile -UserPrincipalName "test.scriptuser@example.com" -AccountEnabled $true -MailNickName "TestScriptUser"
