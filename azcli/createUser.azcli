@@ -1,0 +1,1 @@
+az ad user create --display-name "Azcli User" --password "<ChooseAPasswordHere>" --user-principal-name "azcli.user@example.com" --force-change-password-next-login

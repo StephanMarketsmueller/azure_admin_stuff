@@ -1,0 +1,8 @@
+az ad group create --display-name "Cleaning Department" --mail-nickname "CleaningDepartment"
+
+az ad group member check --group "Cleaning" --member-id "<usersMemberId>"
+
+az ad group member check --group "Cleaning Department" --member-id "<usersMemberId>"
+az ad group member add --group "Cleaning Department" --member-id "<usersMemberId>"
+az ad group member check --group "Cleaning Department" --member-id "<usersMemberId>"
+
