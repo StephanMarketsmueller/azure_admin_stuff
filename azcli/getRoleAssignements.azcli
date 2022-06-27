@@ -1,0 +1,2 @@
+# Azure CLI get role assignments
+az role assignment list
