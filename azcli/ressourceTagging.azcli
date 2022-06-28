@@ -8,4 +8,4 @@ az tag update --resource-id $resource --tags owner="Stephan Marketsmüller" env=
 
 az tag list --resource-id $resource
 
-az resource list --tag env=prod --query [].{Name:name}
+az resource list --tag env=prod --query [].name
