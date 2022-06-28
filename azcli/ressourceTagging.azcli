@@ -1,0 +1,7 @@
+resource=$(az resource show -g <rg-name> -n <resource-Name> --resource-type <resource-type> --query "id" --output tsv)
+
+az tag create --resource-id $resource --tags category=monitoring
+
+az tag update --resource-id $resource --tags env=dev --operation Merge
+
+az tag update --resource-id $resource --tags owner="Stephan Marketsmüller" env=dev --operation Replace
